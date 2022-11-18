@@ -8,6 +8,7 @@ TagManager:
   - Plane
   - Bullet
   - Cannon
+  - Missile
   layers:
   - Default
   - TransparentFX

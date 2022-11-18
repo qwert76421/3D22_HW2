@@ -20,9 +20,9 @@ public class MissileController : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.tag == "Cannon"){
-            Time.timeScale = 0f;
-        }        
+        // if(collision.gameObject.tag == "Cannon"){
+        //     Time.timeScale = 0f;
+        // }        
         if(collision.gameObject.tag == "Plane"){
             Destroy(this.gameObject);
         }

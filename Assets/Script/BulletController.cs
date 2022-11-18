@@ -6,7 +6,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed = 0.2f;
+    public float speed = 0.05f;
     public GameObject boom;
     
     void Start() {
@@ -17,6 +17,7 @@ public class BulletController : MonoBehaviour
 
    // Update is called once per frame
     void Update() {
+        Debug.Log("speed: "+speed);
         this.transform.Translate(new Vector3(0, -1 * speed, 0));
     }
 
